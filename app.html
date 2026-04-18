@@ -1,0 +1,33 @@
+<div style="text-align:center; margin-top: 50px;">
+  <h2>Experiment No. 03: Angular Data Binding</h2>
+
+  <section>
+    <h3>1. Interpolation</h3>
+    <p>Displaying the URL variable: <strong>{{ url }}</strong></p>
+  </section>
+
+  <hr>
+
+  <section>
+    <h3>2. Property Binding</h3>
+    <p>Binding the URL to an image source:</p>
+    <img [src]="url" alt="Angular Logo" width="150">
+  </section>
+
+  <hr>
+
+  <section>
+    <h3>3. Event Binding</h3>
+    <p>Click the button to see a message in the browser console (F12):</p>
+    <button (click)="onButtonClick()">Click Me</button>
+  </section>
+
+  <hr>
+
+  <section>
+    <h3>4. Two-Way Data Binding</h3>
+    <p>Type in the box to see the content update immediately:</p>
+    <input type="text" [(ngModel)]="name" placeholder="Enter your name">
+    <p><strong>Typed Content:</strong> {{ name }}</p>
+  </section>
+</div>
